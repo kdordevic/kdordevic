@@ -223,7 +223,7 @@ h2 {
 h3 {
   font-weight: 300;
   padding-top: 3vh;
-  letter-spacing: 7px;
+  letter-spacing: 8px;
 }
 
 h4 {
@@ -278,7 +278,7 @@ p {
 
 #parallax_one {
   background-color: #413c3c;
-  background-image: url(images/binary1.png);
+  background-image: url(static/images/computer.png);
 }
 
 #parallax_two {
@@ -297,6 +297,14 @@ p {
   background-image: url(static/images/laptop-right.jpg);
 }
 
+#parallax_two, #parallax_four {
+  background-position: left;
+}
+
+#parallax_three {
+  background-position: right;
+}
+
 .par-right {
   padding-top: 30vh;
   display: -webkit-box;
@@ -311,11 +319,7 @@ p {
   padding-right: 25vw;
 }
 
-.quality {
-  padding-right: 20vw;
-}
-
-.graphic {
+.par-left {
   padding-top: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,11 +393,11 @@ p {
   background-image: url(static/images/et-home.png);
 }
 
-.work .exemples .work-two {
+.work .exemples .work-three {
   background-image: url(static/images/animation-photo.jpg);
 }
 
-.work .exemples .work-three {
+.work .exemples .work-two {
   background-image: url(static/images/interface-postcard.jpg);
 }
 
@@ -469,13 +473,18 @@ footer .contact a i {
   width: 960px;
 }
 
-.websites {
+.web {
   background-color: #e9e9e9;
   width: 100vw;
   height: auto;
 }
 
-.websites h5 {
+.web .websites {
+  width: 65%;
+  margin: auto;
+}
+
+.web .websites h5 {
   padding: 20px;
   color: #f15d50;
   text-transform: uppercase;
@@ -483,22 +492,21 @@ footer .contact a i {
   font-weight: 400;
 }
 
-.websites p {
+.web .websites p {
   color: black;
   letter-spacing: 0px;
-  width: 65%;
   margin: auto;
   text-align: justify;
 }
 
-.websites .mockup-photo1 {
+.web .websites .mockup-photo1 {
   padding-top: 10px;
-  width: 65%;
+  width: 100%;
 }
 
-.websites .site-img {
+.web .websites .site-img {
   padding-top: 10px;
-  width: 65%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,32 +516,74 @@ footer .contact a i {
   margin: auto;
 }
 
-.websites .site-img .photo {
+.web .websites .site-img .photo {
   padding-top: 10px;
 }
 
-.websites .site-img .photo img {
+.web .websites .site-img .photo img {
   width: 100%;
   padding: 5px;
 }
 
-.websites .site-img .photo p {
+.web .websites .site-img .photo p {
   padding: 0;
   width: 90%;
 }
 
-.websites .demo {
-  width: 65%;
-  margin: auto;
-}
-
-.websites .demo h5 {
-  color: black;
-  text-align: left;
-}
-
-.websites .demo video {
+.web .websites .demo video {
   width: 100%;
-  background-color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+  hr {
+    width: 60%;
+  }
+  .dev {
+    padding-right: 12vw;
+  }
+  .quality {
+    padding-right: 12vw;
+    width: 80%;
+  }
+  .web .websites {
+    width: 80%;
+    margin: auto;
+  }
+  .web .websites .site-img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .web .websites .site-img .photo img {
+    padding: 0px;
+  }
+  .web .websites .site-img .photo p {
+    width: 100%;
+  }
+  .two, .four {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media only screen and (max-height: 414px) {
+  .par-left, .par-right {
+    padding-top: 10vh;
+  }
+  .quality {
+    padding-right: 12vw;
+    width: 60%;
+  }
+  .work {
+    width: 100vw;
+    height: auto;
+    background-color: #e9e9e9;
+    padding-bottom: 20vh;
+  }
+  .work h4 {
+    padding-top: 12vh;
+    padding-bottom: 1vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

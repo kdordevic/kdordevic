@@ -124,7 +124,7 @@ h2 {
 h3 {
   font-weight: 300;
   padding-top: 3vh;
-  letter-spacing: 7px;
+  letter-spacing: 8px;
 }
 h4 {
   color: black;
@@ -169,8 +169,8 @@ p {
 
 #parallax_one {
   background-color: rgb(65, 60, 60);
-  //background-image: url(static/images/computer.png);
-  background-image: url(images/binary1.png);
+  background-image: url(static/images/computer.png);
+  //background-image: url(images/binary1.png);
 }
 
 #parallax_two {
@@ -186,6 +186,12 @@ p {
 #parallax_five {
   background-image: url(static/images/laptop-right.jpg);
 }
+#parallax_two ,#parallax_four{
+  background-position: left;
+}
+#parallax_three {
+  background-position: right;
+}
 
 .par-right {
   padding-top: 30vh;
@@ -198,11 +204,8 @@ p {
 .dev {
   padding-right: 25vw;
 }
-.quality {
-  padding-right: 20vw;
-}
 
-.graphic {
+.par-left {
   padding-top: 30vh;
   display: flex;
   text-align: right;
@@ -255,10 +258,10 @@ p{
       background-image: url(static/images/et-home.png);
     }
 
-    .work-two {
+    .work-three {
       background-image: url(static/images/animation-photo.jpg);
     }
-    .work-three {
+    .work-two {
       background-image: url(static/images/interface-postcard.jpg);
     }
 
@@ -326,11 +329,13 @@ background-color:$light-background;
 video{
   width: 960px;
 }}
-.websites{
+.web{
   background-color: $light-background;
   width: 100vw;
   height: auto;
-
+  .websites{
+width: 65%;
+margin: auto;
   h5{
     padding: 20px;
     color: $light-red;
@@ -341,17 +346,16 @@ video{
   p{
   color: black;
   letter-spacing: 0px;
-  width: 65%;
   margin: auto;
   text-align: justify;
 }
 .mockup-photo1{
   padding-top: 10px;
-  width: 65%;
+  width: 100%;
 }
 .site-img{
   padding-top: 10px;
-  width: 65%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -369,17 +373,63 @@ video{
 
 }
   .demo{
-    width: 65%;
-    margin: auto;
-h5{
-  color: black;
-  text-align: left;
-}
 video{
   width: 100%;
-  background-color: gray;
 }
   }
+}}
+@media only screen and (max-width: 768px) {
+  *{
+    overflow-x: hidden;
+  }
+  hr {
+  width: 60%;
+}
+.dev {
+  padding-right: 12vw;
+}
+.quality {
+  padding-right: 12vw;
+  width: 80%;
+}
+.web{
+.websites{
+  width: 80%;
+  margin: auto;
+  .site-img{
+  flex-wrap: wrap;
+  .photo{
+    img{
+      padding: 0px;
+    }
+    p{
+      width: 100%;
+    }
+  }
+}
+}}
 
+.two,.four{
+  background-color: rgba(255, 255, 255,0.5);
+}
+}
+@media only screen and (max-height: 414px) {
+  .par-left,.par-right{
+    padding-top: 10vh;
+  }
+  .quality {
+  padding-right: 12vw;
+  width: 60%;
 }
 
+.work {
+  width: 100vw;
+  height: auto;
+  background-color: $light-background;
+  padding-bottom: 20vh;
+
+  h4 {
+    padding-top: 12vh;
+    padding-bottom: 1vh;
+  }}
+}
