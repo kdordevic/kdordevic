@@ -278,7 +278,7 @@ p {
 
 #parallax_one {
   background-color: #413c3c;
-  background-image: url(static/images/computer.png);
+  background-image: url(images/binary1.png);
 }
 
 #parallax_two {
@@ -534,5 +534,6 @@ footer .contact a i {
 
 .websites .demo video {
   width: 100%;
+  background-color: gray;
 }
 /*# sourceMappingURL=style.css.map */
