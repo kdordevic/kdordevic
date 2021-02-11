@@ -548,6 +548,9 @@ footer .contact a i {
     padding-right: 12vw;
     width: 80%;
   }
+  .parallax_container {
+    background-size: contain;
+  }
   .web .websites {
     width: 80%;
     margin: auto;
