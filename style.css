@@ -549,7 +549,7 @@ footer .contact a i {
     width: 80%;
   }
   .parallax_container {
-    background-size: contain;
+    background-size: cover !important;
   }
   .web .websites {
     width: 80%;
