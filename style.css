@@ -538,6 +538,9 @@ footer .contact a i {
   * {
     overflow-x: hidden;
   }
+  h3 {
+    letter-spacing: 10px;
+  }
   hr {
     width: 60%;
   }
@@ -549,7 +552,7 @@ footer .contact a i {
     width: 80%;
   }
   .parallax_container {
-    background-size: cover !important;
+    background-attachment: unset;
   }
   .web .websites {
     width: 80%;
