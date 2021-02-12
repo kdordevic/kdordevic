@@ -8,14 +8,14 @@ const headerItems = header.children;
 function scrollFunction() {
   console.log('test')
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    header.style.height = "50px";
+   
     header.style.backgroundColor = "white";
     for (var i = 0; i < headerItems.length; i++) {
       headerItems[i].style.color = "black";
     }
     header.style.color = "black";
   } else {
-    header.style.height = "60px";
+   
     header.style.backgroundColor = "transparent";
     for (var i = 0; i < headerItems.length; i++) {
       headerItems[i].style.color = "white";

@@ -151,6 +151,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -158,8 +159,6 @@ body {
   font-weight: 400;
   text-align: center;
   color: white;
-  font-weight: 400;
-  overflow-x: hidden;
 }
 
 a {
@@ -169,7 +168,7 @@ a {
 
 .nav {
   position: fixed;
-  height: 60px;
+  height: 55px;
   width: 100vw;
   padding-top: 2vh;
   display: -webkit-box;
@@ -188,8 +187,8 @@ a {
   margin-top: 30vh;
   width: 85px;
   height: auto;
-  -webkit-animation: rotation 1.5s  linear;
-          animation: rotation 1.5s  linear;
+  -webkit-animation: rotation 1.5s linear;
+          animation: rotation 1.5s linear;
 }
 
 hr {
@@ -268,7 +267,8 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.three, .five {
+.three,
+.five {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -293,16 +293,9 @@ p {
   background-image: url(static/images/pencil-left.jpg);
 }
 
-#parallax_five {
-  background-image: url(static/images/laptop-right.jpg);
-}
-
-#parallax_two, #parallax_four {
+#parallax_two,
+#parallax_four {
   background-position: left;
-}
-
-#parallax_three {
-  background-position: right;
 }
 
 .par-right {
@@ -335,7 +328,7 @@ p {
   width: 100vw;
   height: auto;
   background-color: #e9e9e9;
-  padding-bottom: 20vh;
+  padding-bottom: 15vh;
 }
 
 .work h4 {
@@ -417,6 +410,11 @@ p {
   border: none;
 }
 
+footer h2 {
+  padding-top: 10vh;
+  color: #f15d50;
+}
+
 footer .contact {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -463,14 +461,12 @@ footer .contact a i {
 
 .animations .animation-container {
   margin: auto;
-}
-
-.animations .interface, .animations .scarlet {
-  padding-bottom: 3vh;
+  overflow-y: hidden;
 }
 
 .animations video {
   width: 960px;
+  padding-top: 5vh;
 }
 
 .web {
@@ -534,9 +530,25 @@ footer .contact a i {
   width: 100%;
 }
 
+@media only screen and (max-width: 1112px) {
+  .parallax_container {
+    background-attachment: unset;
+  }
+  .animations video {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
-  * {
-    overflow-x: hidden;
+  .three {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .two,
+  .four {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  body {
+    font-weight: 500;
   }
   h3 {
     letter-spacing: 10px;
@@ -550,9 +562,6 @@ footer .contact a i {
   .quality {
     padding-right: 12vw;
     width: 80%;
-  }
-  .parallax_container {
-    background-attachment: unset;
   }
   .web .websites {
     width: 80%;
@@ -568,28 +577,40 @@ footer .contact a i {
   .web .websites .site-img .photo p {
     width: 100%;
   }
-  .two, .four {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
 }
 
 @media only screen and (max-height: 414px) {
-  .par-left, .par-right {
-    padding-top: 10vh;
+  .par-left,
+  .par-right {
+    padding-top: 15vh;
+  }
+  .dev {
+    padding-top: 6vh;
   }
   .quality {
     padding-right: 12vw;
     width: 60%;
   }
-  .work {
-    width: 100vw;
-    height: auto;
-    background-color: #e9e9e9;
-    padding-bottom: 20vh;
-  }
   .work h4 {
     padding-top: 12vh;
     padding-bottom: 1vh;
+  }
+}
+
+@media only screen and (min-height: 1012px) {
+  * {
+    overflow-x: hidden;
+  }
+  .par-left,
+  .par-right {
+    padding-top: 30vh;
+  }
+  .quality {
+    padding-right: 8vw;
+    width: 50%;
+  }
+  #paralax_three {
+    background-position: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 $light-red: rgb(241, 93, 80);
 $light-background: rgb(233, 233, 233);
+$bcg-design:rgb(190, 211, 211);
 
 @keyframes name {
   from {
@@ -30,14 +31,14 @@ $light-background: rgb(233, 233, 233);
   }
 }
 @keyframes rotation {
-		from {
-       transform: rotate(0deg);
-        opacity: 0;
-		}
-		to {
-        transform: rotate(-359deg);
-        opacity: 1;
-		}
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(-359deg);
+    opacity: 1;
+  }
 }
 @keyframes par-right {
   from {
@@ -64,23 +65,21 @@ $light-background: rgb(233, 233, 233);
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  overflow-x: hidden;
 }
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-align: center;
   color: white;
-  font-weight: 400;
-  overflow-x: hidden;
 }
 a {
   text-decoration: none;
   color: white;
-
 }
 .nav {
   position: fixed;
-  height: 60px;
+  height: 55px;
   width: 100vw;
   padding-top: 2vh;
   display: flex;
@@ -89,13 +88,12 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   z-index: 3;
-  
 }
 .logo {
   margin-top: 30vh;
   width: 85px;
   height: auto;
-  animation: rotation 1.5s  linear;
+  animation: rotation 1.5s linear;
 }
 hr {
   border-top: 0.7px solid white;
@@ -142,6 +140,7 @@ h3.my-title {
 p {
   letter-spacing: 6px;
   padding-top: 10px;
+
 }
 .parallax_container {
   height: 100vh;
@@ -150,7 +149,6 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
- 
 }
 .parallax_overlay {
   height: 100vh;
@@ -160,7 +158,8 @@ p {
 .one {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.three,.five {
+.three,
+.five {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .two {
@@ -170,7 +169,7 @@ p {
 #parallax_one {
   background-color: rgb(65, 60, 60);
   background-image: url(static/images/computer.png);
-  //background-image: url(images/binary1.png);
+ 
 }
 
 #parallax_two {
@@ -183,14 +182,12 @@ p {
 #parallax_four {
   background-image: url(static/images/pencil-left.jpg);
 }
-#parallax_five {
-  background-image: url(static/images/laptop-right.jpg);
-}
-#parallax_two ,#parallax_four{
+// #parallax_five {
+//   background-image: url(static/images/laptop-right.jpg);
+// }
+#parallax_two,
+#parallax_four {
   background-position: left;
-}
-#parallax_three {
-  background-position: right;
 }
 
 .par-right {
@@ -218,7 +215,7 @@ p {
   width: 100vw;
   height: auto;
   background-color: $light-background;
-  padding-bottom: 20vh;
+  padding-bottom: 15vh;
 
   h4 {
     padding-top: 12vh;
@@ -228,30 +225,28 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-p{
-  max-width: 350px;
-};
+    p {
+      max-width: 350px;
+    }
     a {
       color: black;
-      
     }
-    .work-on-scroll{
+    .work-on-scroll {
       opacity: 0;
       transform: translateY(200px);
     }
-    .work-on-scroll.appear{
+    .work-on-scroll.appear {
       opacity: 1;
       transform: translateY(0);
-      
     }
-    .work-on-scroll.first.appear{  
-   transition: 0.5s ease-in;
+    .work-on-scroll.first.appear {
+      transition: 0.5s ease-in;
     }
-     .work-on-scroll.second.appear{  
-   transition: 0.7s ease-in;
+    .work-on-scroll.second.appear {
+      transition: 0.7s ease-in;
     }
-     .work-on-scroll.third.appear{  
-   transition: 0.9s ease-in;
+    .work-on-scroll.third.appear {
+      transition: 0.9s ease-in;
     }
 
     .work-one {
@@ -275,14 +270,17 @@ p{
       background-position: center;
       background-size: cover;
       border: 10px solid white;
-      &:hover{
+      &:hover {
         border: none;
       }
     }
-  
   }
 }
 footer {
+  h2 {
+    padding-top: 10vh;
+    color: $light-red;
+  }
   .contact {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -296,8 +294,8 @@ footer {
       height: 40px;
       line-height: 40px;
       text-align: center;
-      &:hover{
-      background-color: $light-red;
+      &:hover {
+        background-color: $light-red;
       }
       .fab {
         line-height: 40px;
@@ -308,134 +306,170 @@ footer {
     }
   }
 }
+// .design{
+//   background-color:$bcg-design;
+// }
+.animations {
+  h4 {
+    padding-bottom: 5vh;
+  }
+  width: 100vw;
+  height: auto;
+  padding-bottom: 10vh;
+  background-color: $light-background;
 
-.animations{
-  
-h4{
-  padding-bottom: 5vh;
-}
-width: 100vw;
-height:auto;
-padding-bottom: 10vh;
-background-color:$light-background;
+  .animation-container {
+    margin: auto;
+    overflow-y: hidden;
+  }
 
-.animation-container{
-  margin: auto;
+  // .interface,
+  // .scarlet {
+  //   padding-bottom: 3vh;
+  // }
+  video {
+    width: 960px;
+    padding-top: 5vh;
+  }
 }
-
-.interface,.scarlet{
-  padding-bottom: 3vh;
-}
-video{
-  width: 960px;
-}}
-.web{
+.web {
   background-color: $light-background;
   width: 100vw;
   height: auto;
-  .websites{
-width: 65%;
-margin: auto;
-  h5{
-    padding: 20px;
-    color: $light-red;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 400;
-  }
-  p{
-  color: black;
-  letter-spacing: 0px;
-  margin: auto;
-  text-align: justify;
-}
-.mockup-photo1{
-  padding-top: 10px;
-  width: 100%;
-}
-.site-img{
-  padding-top: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  .photo{
-    padding-top: 10px;
-    img{
-      width: 100%;
-      padding: 5px;
-    }
-    p{
-      padding: 0;
-      width: 90%;
-    }
-  }
+  .websites {
 
-}
-  .demo{
-video{
-  width: 100%;
-}
+    width: 65%;
+    margin: auto;
+    h5 {
+      padding: 20px;
+      color: $light-red;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    p {
+      color: black;
+      letter-spacing: 0px;
+      margin: auto;
+      text-align: justify;
+    }
+    .mockup-photo1 {
+      padding-top: 10px;
+      width: 100%;
+    }
+    .site-img {
+      padding-top: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      .photo {
+        padding-top: 10px;
+        img {
+          width: 100%;
+          padding: 5px;
+        }
+        p {
+          padding: 0;
+          width: 90%;
+        }
+      }
+    }
+    .demo {
+      video {
+        width: 100%;
+      }
+    }
   }
-}}
+}
+@media only screen and (max-width: 1112px) {
+  .parallax_container {
+    background-attachment: unset;
+  }
+  .animations{
+    video{
+      width: 100%;
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
-  *{
-    overflow-x: hidden;
+   .three {
+    background-color: rgba(0, 0, 0, 0.4);
   }
-  h3{
+   .two,
+  .four {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  body {
+    font-weight: 500;
+  }
+  
+  h3 {
     letter-spacing: 10px;
   }
   hr {
-  width: 60%;
-}
-.dev {
-  padding-right: 12vw;
-}
-.quality {
-  padding-right: 12vw;
-  width: 80%;
-}
-.parallax_container{
-   background-attachment: unset;
-}
-.web{
-.websites{
-  width: 80%;
-  margin: auto;
-  .site-img{
-  flex-wrap: wrap;
-  .photo{
-    img{
-      padding: 0px;
-    }
-    p{
-      width: 100%;
-    }
+    width: 60%;
   }
-}
-}}
-
-.two,.four{
-  background-color: rgba(255, 255, 255,0.5);
-}
-}
-@media only screen and (max-height: 414px) {
-  .par-left,.par-right{
-    padding-top: 10vh;
+  .dev {
+    padding-right: 12vw;
   }
   .quality {
-  padding-right: 12vw;
-  width: 60%;
+    padding-right: 12vw;
+    width: 80%;
+  }
+  .web {
+    .websites {
+      width: 80%;
+      margin: auto;
+      .site-img {
+        flex-wrap: wrap;
+        .photo {
+          img {
+            padding: 0px;
+          }
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+ 
 }
+@media only screen and (max-height: 414px) {
+  .par-left,
+  .par-right {
+    padding-top: 15vh;
+  }
+  .dev{padding-top: 6vh;}
+  .quality {
+    padding-right: 12vw;
+    width: 60%;
+  }
 
-.work {
-  width: 100vw;
-  height: auto;
-  background-color: $light-background;
-  padding-bottom: 20vh;
-
-  h4 {
-    padding-top: 12vh;
-    padding-bottom: 1vh;
-  }}
+  .work {
+    h4 {
+      padding-top: 12vh;
+      padding-bottom: 1vh;
+    }
+  }
+}
+@media only screen and (min-height: 1012px) {
+  *{
+    overflow-x: hidden;
+  }
+ 
+  .par-left,
+  .par-right {
+    padding-top: 30vh;
+  }
+   .quality {
+    padding-right: 8vw;
+    width: 50%;
+  }
+#paralax_three{
+  background-position: center;
+}
+  
 }

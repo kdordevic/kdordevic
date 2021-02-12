@@ -10,7 +10,7 @@ const allGraphic = [
   "gr2.jpg",
   "habbenwill.jpg",
   "ikbi3.jpg",
-  "interface-postcard.jpg",
+  "vacances.jpg",
   "kings.jpg",
   "lp1.jpg",
   "mns.jpg",
