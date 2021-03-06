@@ -389,11 +389,13 @@ footer {
     }
     .mockup{
       width: 100%;
+      height: auto;
       margin-bottom: 50px;
       display: flex;
        background-color: white;
       img{
         width: 50%;  
+        height: auto;
       }
       p{
         width: 50%;

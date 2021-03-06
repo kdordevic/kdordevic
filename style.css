@@ -513,6 +513,7 @@ footer .contact a i {
 
 .web .websites .mockup {
   width: 100%;
+  height: auto;
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,6 +523,7 @@ footer .contact a i {
 
 .web .websites .mockup img {
   width: 50%;
+  height: auto;
 }
 
 .web .websites .mockup p {
