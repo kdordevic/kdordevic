@@ -6,7 +6,6 @@ window.onscroll = function () {
 const header = document.getElementById("header");
 const headerItems = header.children;
 
-function active (){};
 function scrollFunction() {
 
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {

@@ -229,6 +229,7 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    overflow-x: hidden;
     p {
       max-width: 350px;
     }
@@ -358,7 +359,8 @@ footer {
       text-align: justify;
     }
     .mockup-photo1 {
-      padding-top: 10px;
+      padding-top: 20px;
+      padding-bottom: 50px;
       width: 100%;
     }
     .site-img {
@@ -382,6 +384,28 @@ footer {
     }
     .demo {
       video {
+        width: 100%;
+      }
+    }
+    .mockup{
+      width: 100%;
+      margin-bottom: 50px;
+      display: flex;
+       background-color: white;
+      img{
+        width: 50%;  
+      }
+      p{
+        width: 50%;
+        padding: 20px;
+       
+      }
+      
+    }
+    .mockup-hor{
+      width: 100%;
+      margin-bottom: 50px;
+      img{
         width: 100%;
       }
     }

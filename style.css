@@ -350,6 +350,7 @@ p {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 .work .exemples p {
@@ -501,7 +502,8 @@ footer .contact a i {
 }
 
 .web .websites .mockup-photo1 {
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   width: 100%;
 }
 
@@ -533,6 +535,33 @@ footer .contact a i {
 }
 
 .web .websites .demo video {
+  width: 100%;
+}
+
+.web .websites .mockup {
+  width: 100%;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.web .websites .mockup img {
+  width: 50%;
+}
+
+.web .websites .mockup p {
+  width: 50%;
+  padding: 20px;
+}
+
+.web .websites .mockup-hor {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.web .websites .mockup-hor img {
   width: 100%;
 }
 
