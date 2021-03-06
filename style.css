@@ -507,33 +507,6 @@ footer .contact a i {
   width: 100%;
 }
 
-.web .websites .site-img {
-  padding-top: 10px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
-}
-
-.web .websites .site-img .photo {
-  padding-top: 10px;
-}
-
-.web .websites .site-img .photo img {
-  width: 100%;
-  padding: 5px;
-}
-
-.web .websites .site-img .photo p {
-  padding: 0;
-  padding-top: 20px;
-  width: 90%;
-}
-
 .web .websites .demo video {
   width: 100%;
 }
