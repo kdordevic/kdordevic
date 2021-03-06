@@ -577,16 +577,6 @@ footer .contact a i {
     width: 80%;
     margin: auto;
   }
-  .web .websites .site-img {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .web .websites .site-img .photo img {
-    padding: 0px;
-  }
-  .web .websites .site-img .photo p {
-    width: 100%;
-  }
   .animations .animation-container {
     display: none;
   }
