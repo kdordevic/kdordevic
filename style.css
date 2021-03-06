@@ -164,6 +164,7 @@ body {
 a {
   text-decoration: none;
   color: white;
+  overflow: hidden;
 }
 
 .nav {
@@ -181,6 +182,10 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   z-index: 3;
+}
+
+.nav a:hover {
+  color: #f15d50;
 }
 
 .logo {
@@ -523,6 +528,7 @@ footer .contact a i {
 
 .web .websites .site-img .photo p {
   padding: 0;
+  padding-top: 20px;
   width: 90%;
 }
 
@@ -576,6 +582,9 @@ footer .contact a i {
   }
   .web .websites .site-img .photo p {
     width: 100%;
+  }
+  .animations .animation-container {
+    display: none;
   }
 }
 

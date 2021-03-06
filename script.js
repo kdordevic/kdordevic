@@ -5,13 +5,22 @@ window.onscroll = function () {
 };
 const header = document.getElementById("header");
 const headerItems = header.children;
+
+function active (){};
 function scrollFunction() {
-  console.log('test')
+
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
    
     header.style.backgroundColor = "white";
     for (var i = 0; i < headerItems.length; i++) {
       headerItems[i].style.color = "black";
+      headerItems[i].addEventListener('mouseenter',function(e){
+        e.target.style.color = 'rgb(241, 93, 80)';
+      })
+       headerItems[i].addEventListener("mouseleave", function (e) {
+         e.target.style.color = "black";
+       });
+      
     }
     header.style.color = "black";
   } else {
@@ -19,6 +28,12 @@ function scrollFunction() {
     header.style.backgroundColor = "transparent";
     for (var i = 0; i < headerItems.length; i++) {
       headerItems[i].style.color = "white";
+       headerItems[i].addEventListener("mouseenter", function (e) {
+         e.target.style.color = "rgb(241, 93, 80)";
+       });
+       headerItems[i].addEventListener("mouseleave", function (e) {
+         e.target.style.color = "white";
+       });
     }
   }
 }

@@ -76,7 +76,9 @@ body {
 a {
   text-decoration: none;
   color: white;
+  overflow: hidden;
 }
+
 .nav {
   position: fixed;
   height: 55px;
@@ -88,6 +90,8 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   z-index: 3;
+  a:hover{
+    color:$light-red}
 }
 .logo {
   margin-top: 30vh;
@@ -365,12 +369,13 @@ footer {
       margin: auto;
       .photo {
         padding-top: 10px;
-        img {
-          width: 100%;
-          padding: 5px;
-        }
+         img{
+      width: 100%;
+      padding: 5px;
+    }
         p {
           padding: 0;
+          padding-top: 20px;
           width: 90%;
         }
       }
@@ -434,7 +439,11 @@ footer {
       }
     }
   }
-
+.animations {
+ .animation-container{
+   display: none;
+ }
+}
  
 }
 @media only screen and (max-height: 414px) {
