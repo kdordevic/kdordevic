@@ -513,7 +513,6 @@ footer .contact a i {
 
 .web .websites .mockup {
   width: 100%;
-  height: auto;
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,6 +523,8 @@ footer .contact a i {
 .web .websites .mockup img {
   width: 50%;
   height: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .web .websites .mockup p {
@@ -540,7 +541,7 @@ footer .contact a i {
   width: 100%;
 }
 
-@media only screen and (max-width: 1112px) {
+@media only screen and (max-width: 1115px) {
   .parallax_container {
     background-attachment: unset;
   }

@@ -389,13 +389,14 @@ footer {
     }
     .mockup{
       width: 100%;
-      height: auto;
       margin-bottom: 50px;
       display: flex;
        background-color: white;
       img{
         width: 50%;  
-        height: auto;
+        height:auto;
+        align-self: flex-start;
+    
       }
       p{
         width: 50%;
@@ -413,7 +414,7 @@ footer {
     }
   }
 }
-@media only screen and (max-width: 1112px) {
+@media only screen and (max-width: 1115px) {
   .parallax_container {
     background-attachment: unset;
   }
