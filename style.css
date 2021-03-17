@@ -470,6 +470,19 @@ footer .contact a i {
   overflow-y: hidden;
 }
 
+.animations p {
+  color: black;
+  letter-spacing: 0px;
+  margin: auto;
+  width: 65%;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+.animations p a {
+  color: #f15d50;
+}
+
 .animations video {
   width: 960px;
   padding-top: 5vh;
@@ -499,6 +512,10 @@ footer .contact a i {
   letter-spacing: 0px;
   margin: auto;
   text-align: justify;
+}
+
+.web .websites p a {
+  color: #f15d50;
 }
 
 .web .websites .mockup-photo1 {
@@ -544,6 +561,9 @@ footer .contact a i {
 @media only screen and (max-width: 1115px) {
   .parallax_container {
     background-attachment: unset;
+  }
+  .animations p {
+    width: 90%;
   }
   .animations video {
     width: 100%;
