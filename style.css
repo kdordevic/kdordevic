@@ -146,6 +146,24 @@
   }
 }
 
+@-webkit-keyframes banner {
+  0% {
+    margin-left: 100vw;
+  }
+  100% {
+    margin-left: -110vw;
+  }
+}
+
+@keyframes banner {
+  0% {
+    margin-left: 100vw;
+  }
+  100% {
+    margin-left: -110vw;
+  }
+}
+
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -419,6 +437,26 @@ p {
 footer h2 {
   padding-top: 10vh;
   color: #f15d50;
+}
+
+footer .bnr-bckgr {
+  background-color: #f15d50;
+}
+
+footer .bnr-bckgr .banner {
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+  height: 50px;
+  line-height: 35px;
+  -webkit-animation: banner 10s linear;
+          animation: banner 10s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+footer .bnr-bckgr .banner span {
+  padding-left: 50px;
 }
 
 footer .contact {

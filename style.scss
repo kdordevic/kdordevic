@@ -1,6 +1,6 @@
 $light-red: rgb(241, 93, 80);
 $light-background: rgb(233, 233, 233);
-$bcg-design:rgb(190, 211, 211);
+$bcg-design: rgb(190, 211, 211);
 
 @keyframes name {
   from {
@@ -60,6 +60,16 @@ $bcg-design:rgb(190, 211, 211);
     opacity: 1;
   }
 }
+@keyframes banner {
+ 
+ 0% {
+    margin-left: 100vw;
+ }
+ 100% {
+    margin-left: -110vw;
+ }
+ 
+}
 
 * {
   margin: 0;
@@ -90,8 +100,9 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   z-index: 3;
-  a:hover{
-    color:$light-red}
+  a:hover {
+    color: $light-red;
+  }
 }
 .logo {
   margin-top: 30vh;
@@ -144,7 +155,6 @@ h3.my-title {
 p {
   letter-spacing: 6px;
   padding-top: 10px;
-
 }
 .parallax_container {
   height: 100vh;
@@ -173,7 +183,6 @@ p {
 #parallax_one {
   background-color: rgb(65, 60, 60);
   background-image: url(static/images/computer.png);
- 
 }
 
 #parallax_two {
@@ -286,6 +295,20 @@ footer {
     padding-top: 10vh;
     color: $light-red;
   }
+  .bnr-bckgr{
+    background-color: $light-red;
+  .banner {
+    span{
+      padding-left: 50px;
+    }
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    height: 50px;
+    line-height: 35px;
+    animation: banner 10s linear;
+    animation-iteration-count: infinite;
+  }}
   .contact {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -311,9 +334,7 @@ footer {
     }
   }
 }
-// .design{
-//   background-color:$bcg-design;
-// }
+
 .animations {
   h4 {
     padding-bottom: 5vh;
@@ -328,17 +349,17 @@ footer {
     overflow-y: hidden;
   }
 
- p {
-      color: black;
-      letter-spacing: 0px;
-      margin: auto;
-      width: 65%;
-      text-align: justify;
-      a{
-        color: $light-red;
-      }
-      padding-bottom: 20px;
+  p {
+    color: black;
+    letter-spacing: 0px;
+    margin: auto;
+    width: 65%;
+    text-align: justify;
+    a {
+      color: $light-red;
     }
+    padding-bottom: 20px;
+  }
   video {
     width: 960px;
     padding-top: 5vh;
@@ -349,7 +370,6 @@ footer {
   width: 100vw;
   height: auto;
   .websites {
-
     width: 65%;
     margin: auto;
     h5 {
@@ -364,7 +384,7 @@ footer {
       letter-spacing: 0px;
       margin: auto;
       text-align: justify;
-      a{
+      a {
         color: $light-red;
       }
     }
@@ -373,34 +393,31 @@ footer {
       padding-bottom: 50px;
       width: 100%;
     }
-   
+
     .demo {
       video {
         width: 100%;
       }
     }
-    .mockup{
+    .mockup {
       width: 100%;
       margin-bottom: 50px;
       display: flex;
-       background-color: white;
-      img{
-        width: 50%;  
-        height:auto;
+      background-color: white;
+      img {
+        width: 50%;
+        height: auto;
         align-self: flex-start;
-    
       }
-      p{
+      p {
         width: 50%;
         padding: 20px;
-       
       }
-      
     }
-    .mockup-hor{
+    .mockup-hor {
       width: 100%;
       margin-bottom: 50px;
-      img{
+      img {
         width: 100%;
       }
     }
@@ -410,28 +427,27 @@ footer {
   .parallax_container {
     background-attachment: unset;
   }
-  .animations{
-     p{
-        width: 90%;
-      }
-    video{
-     
+  .animations {
+    p {
+      width: 90%;
+    }
+    video {
       width: 100%;
     }
   }
 }
 @media only screen and (max-width: 768px) {
-   .three {
+  .three {
     background-color: rgba(0, 0, 0, 0.4);
   }
-   .two,
+  .two,
   .four {
     background-color: rgba(255, 255, 255, 0.5);
   }
   body {
     font-weight: 500;
   }
-  
+
   h3 {
     letter-spacing: 10px;
   }
@@ -449,22 +465,22 @@ footer {
     .websites {
       width: 80%;
       margin: auto;
-    
     }
   }
-.animations {
- .animation-container{
-   display: none;
- }
-}
- 
+  .animations {
+    .animation-container {
+      display: none;
+    }
+  }
 }
 @media only screen and (max-height: 414px) {
   .par-left,
   .par-right {
     padding-top: 15vh;
   }
-  .dev{padding-top: 6vh;}
+  .dev {
+    padding-top: 6vh;
+  }
   .quality {
     padding-right: 12vw;
     width: 60%;
@@ -478,20 +494,19 @@ footer {
   }
 }
 @media only screen and (min-height: 1012px) {
-  *{
+  * {
     overflow-x: hidden;
   }
- 
+
   .par-left,
   .par-right {
     padding-top: 30vh;
   }
-   .quality {
+  .quality {
     padding-right: 8vw;
     width: 50%;
   }
-#paralax_three{
-  background-position: center;
-}
-  
+  #paralax_three {
+    background-position: center;
+  }
 }
