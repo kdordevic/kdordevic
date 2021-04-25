@@ -449,8 +449,8 @@ footer .bnr-bckgr .banner {
   text-transform: uppercase;
   height: 50px;
   line-height: 35px;
-  -webkit-animation: banner 10s linear;
-          animation: banner 10s linear;
+  -webkit-animation: banner 15s linear;
+          animation: banner 15s linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -609,6 +609,9 @@ footer .contact a i {
 }
 
 @media only screen and (max-width: 768px) {
+  .bnr-bckgr {
+    display: none;
+  }
   .three {
     background-color: rgba(0, 0, 0, 0.4);
   }

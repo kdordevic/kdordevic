@@ -306,7 +306,7 @@ footer {
     text-transform: uppercase;
     height: 50px;
     line-height: 35px;
-    animation: banner 10s linear;
+    animation: banner 15s linear;
     animation-iteration-count: infinite;
   }}
   .contact {
@@ -437,6 +437,9 @@ footer {
   }
 }
 @media only screen and (max-width: 768px) {
+  .bnr-bckgr{
+    display: none;
+  }
   .three {
     background-color: rgba(0, 0, 0, 0.4);
   }
