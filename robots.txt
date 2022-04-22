@@ -1,0 +1,5 @@
+​
+User-agent: *
+Allow: /
+
+Sitemap: https://kdordevic.github.io/sitemap.xml
